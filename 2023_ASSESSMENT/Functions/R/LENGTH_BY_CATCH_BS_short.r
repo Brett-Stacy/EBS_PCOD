@@ -48,7 +48,7 @@ LENGTH_BY_CATCH_short<-function(species=fsh_sp_str ,species_catch=fsh_sp_label, 
     }
 
 
-## pull domestic length and species composition data for haul data  
+## pull domestic length and species composition data for haul data  A CHANGE BY ME
 
   lfreq = readLines('sql/dom_length.sql')
   lfreq = sql_filter(sql_precode = "IN", x = species, sql_code = lfreq, flag = '-- insert species')
